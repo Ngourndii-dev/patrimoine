@@ -17,7 +17,7 @@ import school.hei.patrimoine.modele.possession.Compte;
 import school.hei.patrimoine.modele.possession.Possession;
 
 @Slf4j
-public abstract class Cas {
+public abstract class   Cas {
   @Getter protected final LocalDate ajd;
   @Getter protected final LocalDate finSimulation;
 
@@ -31,7 +31,7 @@ public abstract class Cas {
     this.newPatrimoineSupplier =
         () -> {
           patrimoine = Patrimoine.of(nom(), devise(), ajd, possesseurs, possessions());
-          init();
+          init()                                                                                                                ;
           suivi();
           return patrimoine;
         };
@@ -74,6 +74,5 @@ public abstract class Cas {
               }
             });
   }
-
   public abstract Set<Possession> possessions();
 }

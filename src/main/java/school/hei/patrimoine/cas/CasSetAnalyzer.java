@@ -2,7 +2,6 @@ package school.hei.patrimoine.cas;
 
 import static java.awt.EventQueue.invokeLater;
 import static java.util.Comparator.comparing;
-
 import java.util.Set;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
